@@ -1,0 +1,217 @@
+/* Document styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2.bigger {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.4rem;
+}
+
+.pink {
+    color: #EB8F7A;
+}
+
+.blue {
+    color: #85C6CC;
+}
+
+.dark-blue {
+    color: #3D3F50;
+}
+
+.beige {
+    color: #E3CF9C;
+}
+
+.marker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Navbar */
+
+.my-navbar {
+    background-color: white;
+}
+
+/* Header stage parallax */
+
+.hero {
+    width: 100vp;
+    height: 400px;
+    background-image: url(../assets/img/paper.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placeholder {
+    background-color: gray;
+    height: 400px;
+}
+
+/* Header scroll down button */
+
+@keyframes bounce {
+    0%, 5%, 12.5%, 20%, 25% {transform: translateY(0);} 
+    10% {transform: translateY(-30px);} 
+    15% {transform: translateY(-15px);} 
+ } 
+
+#btn1 {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -2em;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* Hero stage parallax */
+
+section {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.stage h1 {
+    font-size: 50px;
+}
+
+.stage p {
+    font-size: 20px;
+    font-weight: medium;
+    max-width: 50%;
+    margin: 0;
+}
+
+/* Header image */
+
+.header-parallax {
+    height: 600px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/loft-narrow.jpg);
+}
+
+/* Hero images */
+
+.image-stage {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.parallax {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Copy stages */
+
+.copy-stage {
+    background-color: white;
+    margin: 200px 0;
+}
+
+.copy-stage img {
+    width: 150px;
+    padding-right: 20px;
+}
+
+/* Colored stage for copy, aligned left */
+
+.color-stage-left {
+    width: 60%;
+    padding: 80px 0 0 100px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+
+.color-stage-left h2 {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+}
+
+.fat-line-vertical-left {
+    height: 70%;
+    width: 5px;
+    position: absolute;
+    left: -50px;
+    bottom: 0;
+}
+
+.fat-line-horizontal-left {
+    height: 5px;
+    width: 20%;
+    position: absolute;
+    right: -150px;
+    bottom: 0;
+}
+
+/* Colored stage for copy, aligned right */
+
+.color-stage-right {
+    width: 60%;
+    padding: 80px 100px 0 5px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+
+.color-stage-right h2 {
+    position: absolute;
+    top: -40px;
+    right: -80px;
+}
+
+.fat-line-vertical-right {
+    height: 70%;
+    width: 5px;
+    position: absolute;
+    right: -80px;
+    bottom: 0;
+}
+
+.fat-line-horizontal-right {
+    height: 5px;
+    width: 20%;
+    position: absolute;
+    left: -150px;
+    bottom: 0;
+}
+
+/* Stage colors */
+
+.stage-pink {
+    background-color: #EFA595;
+}
+
+.stage-blue {
+    background-color: #B6DDE0;
+}
+
+.stage-brown {
+    background-color: #E9D9B0;
+}
