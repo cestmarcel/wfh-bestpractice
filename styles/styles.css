@@ -140,11 +140,27 @@ section {
     padding-right: 20px;
 }
 
+/* Icons on stages */
+
+img.icon-right {
+    width: 30%;
+    position: absolute;
+    top: -100px;
+    right: -170px;
+}
+
+img.icon-left {
+    width: 30%;
+    position: absolute;
+    top: -100px;
+    left: -170px;
+}
+
 /* Colored stage for copy, aligned left */
 
 .color-stage-left {
     width: 60%;
-    padding: 80px 0 0 100px;
+    padding: 80px 5px 0 100px;
     margin: 50px auto 0 auto;
     position: relative;
 }
@@ -233,27 +249,13 @@ footer {
 
 /* Discalaimer */
 
-.card-body {
-    color: white;
-    text-align: left;
+.popover-body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.btn-link {
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-}
-
-footer .btn-link {
-    padding-bottom: 30px;
-}
-
-.btn-link:hover {
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-}
-
-footer hr {
-    background-color: white;
+.btn-secondary {
+    color: #fff;
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+    margin-bottom: 30px;
 }
