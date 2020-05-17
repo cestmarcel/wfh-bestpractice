@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body h1 {
@@ -36,6 +37,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../assets/img/loft-narrow.jpg);
+    max-width: 100vp;
 }
 
 /* Header scroll down button */
