@@ -1,22 +1,23 @@
-$(window).scroll(function(){
+
+$(document).ready(function() {
+  $("#btn1").click(function() {
+
+    $("body,html").animate(
+      {
+        scrollTop: $("#scroll-target").offset().top - 100
+      },
+      800 //speed
+    );
+
+  });
+
+  $(window).scroll(function(){
     var scroll_position = $(window).scrollTop()/2;
     $('section').css({
         'background-position-y' : - scroll_position + "px",
     })
-})
-
-$(document).ready(function() {
-    $("#btn1").click(function() {
-
-        console.log( $("#scroll-target").offset())
-
-      $("body,html").animate(
-        {
-          scrollTop: $("#scroll-target").offset().top - 100
-        },
-        800 //speed
-      );
-    });
+  
+  })
 
   var $animation_elements = $('.animate__animated');
 
@@ -42,7 +43,7 @@ $(document).ready(function() {
   }
 
   if (window.innerWidth > 785) {
-  $(window).on('scroll', checkInView);
+    $(window).on('scroll', checkInView);
   }
 
-  });
+});
