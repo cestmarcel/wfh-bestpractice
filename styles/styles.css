@@ -11,26 +11,15 @@ body h1 {
 h2.bigger {
     font-family: 'Permanent Marker', cursive;
     font-size: 2.4rem;
-}
-
-.pink {
-    color: #EB8F7A;
-}
-
-.blue {
-    color: #85C6CC;
-}
-
-.dark-blue {
-    color: #3D3F50;
-}
-
-.beige {
-    color: #E3CF9C;
+    width: 80%;
 }
 
 .marker {
     font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    margin-top: 3rem;
 }
 
 /* Navbar */
@@ -93,6 +82,7 @@ section {
 
 .stage h1 {
     font-size: 50px;
+    width: 70%;
 }
 
 .stage p {
@@ -218,6 +208,12 @@ img.icon-left {
     bottom: 0;
 }
 
+/* Do not display mobile stage on desktop */
+
+.mobile-stage {
+    display: none;
+}
+
 /* Stage colors */
 
 .stage-pink {
@@ -259,3 +255,79 @@ footer {
     border-color: #4a4a4a;
     margin-bottom: 30px;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 785px) {
+    .stage h1 {
+        width: 100%;
+    }
+
+    .stage p {
+        max-width: 100%;
+    }
+    
+    .fat-line-vertical-right, .fat-line-horizontal-right, 
+    .fat-line-vertical-left, .fat-line-horizontal-left {
+      display: none;
+    }
+
+    h2.bigger {
+        width: 100%;
+    }
+
+    .copy-stage {
+        margin: 100px 0;
+    }
+
+    .image-stage {
+        height: 200px;
+    }
+
+    .stage-pink, .stage-blue, .stage-brown {
+        background-color: white;
+    }
+
+    .color-stage-right, .color-stage-left {
+        width: 80%;
+        padding: 0;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .color-stage-left h2, .color-stage-right h2 {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    img.icon-right, img.icon-left {
+        position: static;
+        margin-left: 60%;
+        width: 40%;
+    }
+
+    .copy-stage img {
+        padding-right: 0;
+    }
+
+    .mobile-stage {
+        width: 60%;
+        height: 40px;
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        display: block;
+    }
+
+    .mobile-pink {
+        background-color: #EFA595;
+    }
+    
+    .mobile-blue {
+        background-color: #B6DDE0;
+    }
+    
+    .mobile-brown {
+        background-color: #E9D9B0;
+    }
+  }
