@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   $(window).scroll(function(){
     var scroll_position = $(window).scrollTop()/2;
-    $('section').css({
+    $('.header-parallax').css({
         'background-position-y' : - scroll_position + "px",
     })
   
