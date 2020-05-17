@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body h1 {
@@ -307,12 +308,15 @@ footer {
         margin-bottom: 30px;
     }
 
-    /* Animated icons on mobile */
+    /* Non-animated icons on mobile */
 
-    img.icon-right, img.icon-left {
-        position: static;
+    img.icon-left, img.icon-right {
+        position: relative;
         margin-left: 60%;
         width: 40%;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
     .copy-stage img {

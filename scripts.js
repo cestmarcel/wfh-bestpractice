@@ -41,6 +41,8 @@ $(document).ready(function() {
     });
   }
 
+  if (window.innerWidth > 785) {
   $(window).on('scroll', checkInView);
+  }
 
   });
