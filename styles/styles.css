@@ -33,6 +33,7 @@ p {
 
 .header-parallax {
     height: 600px;
+    background-attachment: fixed;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,7 +85,6 @@ p {
 section {
     position: relative;
     width: 100%;
-    background-attachment: fixed;
     height: 400px;
 }
 
@@ -273,7 +273,7 @@ footer {
 @media only screen and (max-width: 785px) {
     /* Header */
 
-    .header-mobile {
+    /* .header-mobile {
         display: inherit;
         height: 600px;
         background-position: top;
@@ -281,10 +281,10 @@ footer {
         background-repeat: no-repeat;
         background-image: url(../assets/img/loft-narrow.jpg);
         max-width: 100vw;
-    }
+    } */
 
     .header-parallax {
-        display: none;
+        background-attachment: scroll;
     }
    
     /* Hero stage */
