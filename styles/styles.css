@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
 }
 
 body h1 {
@@ -31,19 +30,12 @@ p {
 
 /* Header stage parallax */
 
-.hero {
-    width: 100vp;
-    height: 400px;
-    background-image: url(../assets/img/paper.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.header-parallax {
+    height: 600px;
+    background-position: top;
     background-size: cover;
-}
-
-.placeholder {
-    background-color: gray;
-    height: 400px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/loft-narrow.jpg);
 }
 
 /* Header scroll down button */
@@ -91,16 +83,6 @@ section {
     font-weight: medium;
     max-width: 50%;
     margin: 0;
-}
-
-/* Header image */
-
-.header-parallax {
-    height: 600px;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../assets/img/loft-narrow.jpg);
 }
 
 /* Hero images */
@@ -244,7 +226,7 @@ footer {
     padding: 30px 0 0 0;
 }
 
-/* Discalaimer */
+/* Disclaimer */
 
 .popover-body {
     font-family: 'Open Sans', sans-serif;
