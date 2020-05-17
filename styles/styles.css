@@ -259,6 +259,8 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 785px) {
+    /* Hero stage */
+    
     .stage h1 {
         width: 100%;
     }
@@ -266,11 +268,8 @@ footer {
     .stage p {
         max-width: 100%;
     }
-    
-    .fat-line-vertical-right, .fat-line-horizontal-right, 
-    .fat-line-vertical-left, .fat-line-horizontal-left {
-      display: none;
-    }
+
+    /* Copy stage */
 
     h2.bigger {
         width: 100%;
@@ -300,6 +299,8 @@ footer {
         margin-bottom: 30px;
     }
 
+    /* Animated icons on mobile */
+
     img.icon-right, img.icon-left {
         position: static;
         margin-left: 60%;
@@ -309,6 +310,15 @@ footer {
     .copy-stage img {
         padding-right: 0;
     }
+
+    /* Do not display fat lines on mobile */
+
+    .fat-line-vertical-right, .fat-line-horizontal-right, 
+    .fat-line-vertical-left, .fat-line-horizontal-left {
+      display: none;
+    }
+
+    /* Replace fat lines with small square on mobile */
 
     .mobile-stage {
         width: 60%;
