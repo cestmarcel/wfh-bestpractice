@@ -1,3 +1,5 @@
+/* Header */
+
 .about-parallax {
     height: 300px;
     background-attachment: fixed;
@@ -11,4 +13,53 @@
 
 .about-parallax .stage h1 {
     width: 100%;
+}
+
+/* Spacer */
+
+.spacer {
+    height: 50px;
+}
+
+/* Description */
+
+.about h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about p {
+    margin-top: 1rem;
+}
+
+/* Content */
+
+.globe {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.pin {
+    width: 100%;
+}
+
+h5.about {
+    margin: .5rem 0;
+}
+
+.chart {
+    width: 80%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1000px) {
+
+.no-mobile {
+    display: none;
+}
+
+.chart {
+    width: 100%;
+}
+
 }
